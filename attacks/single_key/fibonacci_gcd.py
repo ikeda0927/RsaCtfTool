@@ -28,3 +28,5 @@ def attack(attack_rsa_obj, publickey, cipher=[]):
             return (None, None)
         except TimeoutError:
             return (None, None)
+        except ValueError:
+            return (None, None)
